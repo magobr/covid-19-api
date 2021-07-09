@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Covid-19</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Total de Casos por Covid-19 2021</h1>
+        </div>
+
+        <div class="text-info">
+            <small>Selecione o País e O Mês para obter o Resultado</small>
+        </div>
+        
+        <nav>
+            <div class="flex-select">
+                <div class="flex-select-item">
+                    <select name="countries" id="countries" class="combo-box">
+                        <option value="brazil">Brasil</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+                </div>
+                <div class="flex-select-item">
+                    <select name="monthlist" id="monthlist" class="combo-box"></select>
+                </div>
+            </div>
+        </nav>
+
+        <div class="result-cases">
+            <span id="result"></span>
+        </div>
+    </div>
+    <script data-main="scripts/app" src="./js/index.js"></script>
+</body>
+</html>
